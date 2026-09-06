@@ -48,5 +48,11 @@ rsync -aHAX --delete \
     "$STORAGE_SOURCE" \
     "$STORAGE_DEST"
 
+vzdump 100 101 102 \
+    --storage backup1-vzdump \
+    --mode snapshot \
+    --compress zstd \
+    --prune-backups 'keep-daily=7'
+
 # Flush all writes before cleanup/export
 sync

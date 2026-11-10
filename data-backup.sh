@@ -2,6 +2,7 @@
 
 set -u
 
+# File backups only; do not create Proxmox CT/VM archives.
 PROJECT_SOURCE="/the_vault/ComputerScience/"
 STORAGE_SOURCE="/the_cave/"
 
@@ -93,7 +94,6 @@ backup_disk() (
 
     POOL="$1"
     DISK="$2"
-    VZDUMP_STORAGE="$3"
 
     PROJECT_DATASET="${POOL}/projects_backup"
     STORAGE_DATASET="${POOL}/data"
@@ -268,18 +268,6 @@ backup_disk() (
         "$STORAGE_DEST"
 
     #
-    # Proxmox guest backups.
-    #
-
-    echo "Backing up Proxmox guests to $POOL..."
-
-    vzdump 100 101 102 \
-        --storage "$VZDUMP_STORAGE" \
-        --mode snapshot \
-        --compress zstd \
-        --prune-backups 'keep-daily=7'
-
-    #
     # Explicit final flush before cleanup/export.
     #
 
@@ -299,8 +287,7 @@ FAILED=0
 
 backup_disk \
     "backup1" \
-    "/dev/disk/by-id/ata-ST2000DM008-2FR102_WFL37651" \
-    "backup1-vzdump"
+    "/dev/disk/by-id/ata-ST2000DM008-2FR102_WFL37651"
 
 RC=$?
 
@@ -316,8 +303,7 @@ fi
 
 backup_disk \
     "backup2" \
-    "/dev/disk/by-id/ata-ST2000VM003-1ET164_W521SWPS" \
-    "backup2-vzdump"
+    "/dev/disk/by-id/ata-ST2000VM003-1ET164_W521SWPS"
 
 RC=$?
 

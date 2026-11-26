@@ -12,13 +12,13 @@ The Proxmox Node has the OS, VMs and CTs all stored on a 512GB NVME SSD while al
 Because I decided to save money and not get a case I had the problem of turning the node on and off, at first I used a screwdriver to bridge the 2 power pins on the motherboard but then I realised I could use parts from my Arduino kit to create a power button, restart button, power LED and disk read/write LED.
 
 Hardware list:
-CPU: Ryzen 5 2600
-GPU: GTX 1050ti
-Motherboard: Asus TUF B450
-RAM: 16GB 2666MHz
-SSD: 512GB NVMe
-Storage: 2x 2TB 3.5" HDDs, 1x 1TB 2.5" SSD, 1x 128GB 2.5" SSD
-Case: None
+- CPU: Ryzen 5 2600
+- GPU: GTX 1050ti
+- Motherboard: Asus TUF B450
+- RAM: 16GB 2666MHz
+- SSD: 512GB NVMe
+- Storage: 2x 2TB 3.5" HDDs, 1x 1TB 2.5" SSD, 1x 128GB 2.5" SSD
+- Case: None
 
 ##  Networking
 

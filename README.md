@@ -9,6 +9,8 @@ I self host multiple services on a single Proxmox Node which I built out of spar
 
 The Proxmox Node has the OS, VMs and CTs all stored on a 512GB NVME SSD while all the data is stored on external drives, the drives used are 2x 2TB 3.5" HDDs, these are very loud so they are almost always off except when data is being backed up to them. All of my data is stored and is always accessible on 2x 2.5" SSDs, one is 1TB (For photos, videos files etc) and the other is 128GB (For storing my projects) these are quiet and run 24/7, everyday at 7am all the data from the SSDs is synced onto the HDDs providing me with 2 backups.
 
+Because I decided to save money and not get a case I had the problem of turning the node on and off, at first I used a screwdriver to bridge the 2 power pins on the motherboard but then I realised I could use parts from my Arduino kit to create a power button, restart button, power LED and disk read/write LED.
+
 Hardware list:
 CPU: Ryzen 5 2600
 GPU: GTX 1050ti

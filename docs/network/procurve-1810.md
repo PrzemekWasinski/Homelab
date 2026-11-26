@@ -2,7 +2,7 @@
 
 ## Device
 
-- Exact model and firmware version: TBD
+- Model: HP ProCurve 1810G 24 Port Managed Switch
 
 ## Port map
 

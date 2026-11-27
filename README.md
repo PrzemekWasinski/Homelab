@@ -30,6 +30,6 @@ I am soon planning to deploy DNS server to reach servers by name and seperate di
 
 ## Projects
 
-<img width="800" height="600" alt="20261126_205625" src="https://github.com/user-attachments/assets/439a626a-c6eb-44a2-b9bf-8d11a41a8c1a" />
+<img width="800" height="600" alt="579464832-a198839a-fb1a-482e-b815-5f78d26b1f78" src="https://github.com/user-attachments/assets/c4fa335c-7230-4463-81e0-0a0307f7f880" />
 
 A few of my projects are to do with radio and require an antenna outside which is why I mounted these Raspberry Pis by my loft window, the one on the right feeds aircraft radio signals to Flight Radar 24 to improve coverage in my area while the one on the left used to host my own [Plane Tracker](https://github.com/PrzemekWasinski/PlaneTracker), due to hardware requirements this was moved to the Proxmox node and the Pi now runs Prometheus and Grafana for server monitoring.
